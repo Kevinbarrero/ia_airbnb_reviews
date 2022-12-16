@@ -34,9 +34,10 @@ Bathrooms = st.number_input('Bathrooms',0, 3)
 Beds = st.number_input('Beds', 1, 5)
 
 
-data = [reviews, Neighborhood, Room_Type, 
-        Guests_Included, Accomodates, Property_Type, 
-        Bedrooms, Price, Bathrooms, Beds]
+data = [Accomodates, Beds, Bedrooms, 
+        reviews, Neighborhood, Property_Type, 
+        Guests_Included, Room_Type, Bathrooms, Price
+        ]
     
 pred = str(model.predict(data))
 st.write(f'Your Rating Will be: {pred}')
